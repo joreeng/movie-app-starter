@@ -4,7 +4,7 @@ const KEY = "";
 function App() {
   const [movies, setMovies] = useState([]);
 
-  fetch(`https://www.omdbapi.com/?apikey=${KEY}&s=batman`)
+  fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=1ec43938`)
     .then((res) => res.json())
     .then((data) => setMovies(data.Search));
 
